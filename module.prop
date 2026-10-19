@@ -1,0 +1,6 @@
+id=ksuguard
+name=KSU Guard
+version=v2.7
+versionCode=8
+author=Rannki
+description=模块准入开关。/data/local/tmp/ksuguard.mode：1=正常（默认），2=禁用所有模块。改成 2 后约 5 秒内立即生效（watchdog 实时监听），自动禁用并软重启，开关随即重置为 1（一次性）。硬重启后无 root 时也可用 adb 改写该文件，下次提权时挂载前拦下。另含崩溃自保守卫（默认观察模式）。自身不含 system 目录，不参与系统挂载。
